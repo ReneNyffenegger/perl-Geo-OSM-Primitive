@@ -6,6 +6,6 @@ MYMETA.yml
 blib
 MANIFEST.bak
 pm_to_blib
-Geo-OSM-DBI-*.tar.gz
+Geo-OSM-Primitive-*.tar.gz
 test.db
 area_test.db

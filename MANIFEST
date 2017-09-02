@@ -1,0 +1,14 @@
+Changes
+lib/Geo/OSM/Primitive.pm
+lib/Geo/OSM/Primitive/Node.pm
+lib/Geo/OSM/Primitive/Relation.pm
+lib/Geo/OSM/Primitive/Way.pm
+Makefile
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+MYMETA.json
+MYMETA.yml
+README
+README.md
+t/001-loat.t
