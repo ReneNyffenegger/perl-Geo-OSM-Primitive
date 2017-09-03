@@ -7,6 +7,7 @@ Geo::OSM::Primitive::Node - Abstract base class for the Open Street Map data pri
 
 =cut
 package Geo::OSM::Primitive::Node;
+our @ISA = qw(Geo::OSM::Primitive);
 #_}
 #_{ use …
 use warnings;
@@ -14,6 +15,7 @@ use strict;
 
 use utf8;
 use Carp;
+use Geo::OSM::Primitive;
 
 #_}
 our $VERSION = 0.01;
@@ -44,7 +46,7 @@ sub new { #_{
 
 =head2 new
 
-    new($osm_node_id);
+    my $osm_node = Geo::OSM::Primitive::Node->new($osm_node_id, $lat, $lon);
 
 =cut
 
@@ -52,10 +54,15 @@ sub new { #_{
 
   my $class = shift;
   my $id    = shift;
+  my $lat   = shift;
+  my $lon   = shift;
 
   my $self = $class->SUPER::new($id);
 
   croak "Wrong class $class" unless $self->isa('Geo::OSM::Primitive::Node');
+
+  $self->{lat} = $lat;
+  $self->{lon} = $lon;
 
   return $self;
 

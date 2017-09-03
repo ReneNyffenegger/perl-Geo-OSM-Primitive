@@ -66,10 +66,30 @@ sub new { #_{
 } #_}
 
 #_}
-#_{ POD: Copyright
+#_{ POD: Author
 
-=head1 Copyright
+=head1 AUTHOR
+
+René Nyffenegger
+
+=cut
+
+#_}
+#_{ POD: See also
+
+=head1 SEE ALSO
+
+L<Geo::OSM::Render> is a base class to render osm data. L<Geo::OSM::Render::SVG> is a derivation of that base class to
+render SVG files.
+
+=cut
+
+#_}
+#_{ POD: Copyright and license
+
+=head1 COPYRIGHT AND LICENSE
 Copyright © 2017 René Nyffenegger, Switzerland. All rights reserved.
+
 This program is free software; you can redistribute it and/or modify it
 under the terms of the the Artistic License (2.0). You may obtain a
 copy of the full license at: L<http://www.perlfoundation.org/artistic_license_2_0>

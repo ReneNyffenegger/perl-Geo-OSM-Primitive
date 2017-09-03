@@ -7,6 +7,7 @@ Geo::OSM::Primitive::Way - Abstract base class for the Open Street Map data prim
 
 =cut
 package Geo::OSM::Primitive::Way;
+our @ISA = qw(Geo::OSM::Primitive);
 #_}
 #_{ use …
 use warnings;
@@ -14,6 +15,7 @@ use strict;
 
 use utf8;
 use Carp;
+use Geo::OSM::Primitive;
 
 #_}
 our $VERSION = 0.01;
