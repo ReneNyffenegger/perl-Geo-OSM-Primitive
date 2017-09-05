@@ -82,6 +82,9 @@ René Nyffenegger
 L<Geo::OSM::Render> is a base class to render osm data. L<Geo::OSM::Render::SVG> is a derivation of that base class to
 render SVG files.
 
+L<Geo::OSM::DBI> can be used to store Open Street Map data in a database. (It should be database independant (hence DBI), yet currently, it probably only works
+with SQLite.
+
 =cut
 
 #_}

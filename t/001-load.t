@@ -1,3 +1,5 @@
+use warnings;
+use strict;
 use Test::More tests => 3;
 
 use Geo::OSM::Primitive::Node    ;

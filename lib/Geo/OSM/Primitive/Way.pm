@@ -46,7 +46,7 @@ sub new { #_{
 
 =head2 new
 
-    new($osm_way_id);
+    my $way = Geo::OSM::Primitive::Way->new($osm_way_id);
 
 =cut
 
@@ -56,12 +56,50 @@ sub new { #_{
   my $id    = shift;
 
   my $self = $class->SUPER::new($id);
-
   croak "Wrong class $class" unless $self->isa('Geo::OSM::Primitive::Way');
+
+  $self->{nodes} = [];
 
   return $self;
 
 } #_}
+# sub add_node { #_{
+# #_{ POD
+# 
+# =head2 add_node
+# 
+#     my $node = Geo::OSM::Primitive::Node->new($osm_node_id …);
+#     my $way  = Geo::OSM::Primitive::Way ->new($osm_way_id  …);
+# 
+#     $way->add_node($node);
+# 
+# =cut
+# 
+# #_}
+# 
+#   my $self = shift;
+#   my $node = shift;
+# 
+#   croak "$node is not a Geo::OSM::Primitive::Node" unless $node->isa($node);
+#   push @{$self->{nodes}}, $node;
+# 
+# } #_}
+# sub cnt_nodes { #_{
+# #_{ POD
+# 
+# =head2 cnt_nodes
+# 
+#     my $cnt_nodes_in_way = $way->cnt_nodes();
+# 
+# =cut
+# 
+# #_}
+# 
+#   my $self = shift;
+# 
+#   return scalar @{$self->{nodes}}
+# 
+# } #_}
 
 #_}
 #_{ POD: Copyright
