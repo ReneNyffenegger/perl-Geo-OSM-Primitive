@@ -46,7 +46,7 @@ sub new { #_{
 
 =head2 new
 
-    new($osm_relation_id);
+    my $osm_rel = new($osm_relation_id);
 
 =cut
 
@@ -55,7 +55,7 @@ sub new { #_{
   my $class = shift;
   my $id    = shift;
 
-  my $self = $class->SUPER::new($id);
+  my $self = $class->SUPER::new($id, 'rel');
 
   croak "Wrong class $class" unless $self->isa('Geo::OSM::Primitive::Relation');
 

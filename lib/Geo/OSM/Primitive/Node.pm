@@ -57,7 +57,7 @@ sub new { #_{
   my $lat   = shift;
   my $lon   = shift;
 
-  my $self = $class->SUPER::new($id);
+  my $self = $class->SUPER::new($id, 'nod');
 
   croak "Wrong class $class" unless $self->isa('Geo::OSM::Primitive::Node');
 

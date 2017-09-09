@@ -55,7 +55,7 @@ sub new { #_{
   my $class = shift;
   my $id    = shift;
 
-  my $self = $class->SUPER::new($id);
+  my $self = $class->SUPER::new($id, 'way');
   croak "Wrong class $class" unless $self->isa('Geo::OSM::Primitive::Way');
 
   $self->{nodes} = [];
