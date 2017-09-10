@@ -144,7 +144,6 @@ should also be found if it is not in the cache.).
 
   return undef unless $self->member_of($rel);
 
-  print "$rel->{id}\n";
   if (exists $self->{cache}->{member_of}->{$rel->{id}}->{rol}) {
     return $self->{cache}->{member_of}->{$rel->{id}}->{rol};
   }
