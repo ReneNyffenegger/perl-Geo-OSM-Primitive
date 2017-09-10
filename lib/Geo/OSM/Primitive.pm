@@ -57,8 +57,9 @@ sub new { #_{
   my $self = {};
   bless $self, $class;
 
+
   croak "Wrong class $class" unless $self->isa('Geo::OSM::Primitive');
-  croak "id is not an integer" unless int($id) == $id;
+  croak "id $id is not an integer" if ref($id) or int($id) != $id;
 
   $self->{id} = $id;
   $self->{primitive_type} = $type;
