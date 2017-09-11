@@ -63,6 +63,39 @@ sub new { #_{
   return $self;
 
 } #_}
+sub nodes { #_{
+#_{ POD
+
+=head2 nodes
+
+    my @nodes = $way -> nodes();
+
+Returns the nodes, stored in the cache via L</_set_cache_nodes>, that the way conisist of.
+
+=cut
+
+#_}
+
+  my $self = shift;
+
+  return @{$self->{cache}->{nodes}};
+
+} #_}
+sub _set_cache_nodes { #_{
+#_{ POD
+
+=head2 _set_cache_nodes
+
+    $way->_set_cache_nodes($node_1, $node_2, $node_3, … $node_n);
+
+=cut
+
+#_}
+  
+  my $self = shift;
+  $self->{cache}->{nodes} = \@_;
+
+} #_}
 # sub add_node { #_{
 # #_{ POD
 # 
