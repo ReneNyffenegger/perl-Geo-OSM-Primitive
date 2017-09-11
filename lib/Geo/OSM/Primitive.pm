@@ -164,7 +164,7 @@ sub _set_cache_role { #_{
 This method assumes that the primitive on which it is called is a member of C<< $osm_relation >> (which must
 be a L<Geo::OSM::Primitive::Relation>) and that the role (which is a string) is C<< $role >>.
 
-This method is internal and should not be called from a user of C<Geo::OSM::Primitive>.
+This method is internal and should not be called from a user of C<Geo::OSM::DBI>.
 
 =cut
 
