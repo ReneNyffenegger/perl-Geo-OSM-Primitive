@@ -81,6 +81,25 @@ Returns the nodes, stored in the cache via L</_set_cache_nodes>, that the way co
   return @{$self->{cache}->{nodes}};
 
 } #_}
+sub start_end_coordinates { #_{
+#_{ POD
+
+=head2 start_end_coordinates
+
+    my ($lat_start, $lon_start, $lat_end, $lon_end) = $way -> start_end_coordinates();
+
+Returns the way's start and end coordinates.
+
+=cut
+
+#_}
+
+  my $self  = shift;
+  my @nodes = $self->nodes;
+
+  return ($nodes[0]->lat, $nodes[0]->lon, $nodes[-1]->lat, $nodes[-1]->lon);
+
+} #_}
 sub _set_cache_nodes { #_{
 #_{ POD
 

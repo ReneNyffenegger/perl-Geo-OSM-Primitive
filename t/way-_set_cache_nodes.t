@@ -5,14 +5,14 @@ use Test::More tests => 7;
 use Geo::OSM::Primitive::Node;
 use Geo::OSM::Primitive::Way ;
 
-my $way_1 = Geo::OSM::Primitive::Node->new(42, 4.2, 2.4);
-my $way_2 = Geo::OSM::Primitive::Node->new(43, 4.3, 3.4);
-my $way_3 = Geo::OSM::Primitive::Node->new(44, 4.4, 4.4);
-my $way_4 = Geo::OSM::Primitive::Node->new(45, 4.5, 5.4);
+my $node_1 = Geo::OSM::Primitive::Node->new(42, 4.2, 2.4);
+my $node_2 = Geo::OSM::Primitive::Node->new(43, 4.3, 3.4);
+my $node_3 = Geo::OSM::Primitive::Node->new(44, 4.4, 4.4);
+my $node_4 = Geo::OSM::Primitive::Node->new(45, 4.5, 5.4);
 
 my $way   = Geo::OSM::Primitive::Way ->new(99);
 
-$way->_set_cache_nodes($way_1, $way_2, $way_3, $way_4);
+$way->_set_cache_nodes($node_1, $node_2, $node_3, $node_4);
 
 my @nodes = $way->nodes();
 
