@@ -18,7 +18,7 @@ use Carp;
 use Geo::OSM::Primitive;
 
 #_}
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 #_{ Synopsis
 
 =head1 SYNOPSIS
@@ -31,7 +31,7 @@ our $VERSION = 0.01;
 
 =head1 OVERVIEW
 
-The idea is to encapsulte methods that use OpenStreetMap data (that is possibly stored in L<Geo::OSM::DBI>.
+The idea is to encapsulte methods that use OpenStreetMap data (that is possibly stored in L<Geo::OSM::DBI>).
 
 =cut
 
@@ -130,13 +130,16 @@ Return the longitude of the node.
 # todo } #_}
 
 #_}
-#_{ POD: Copyright
+#_{ POD: Copyright and License
 
-=head1 Copyright
+=head1 COPYRIGHT AND LICENSE
+
 Copyright © 2017 René Nyffenegger, Switzerland. All rights reserved.
+
 This program is free software; you can redistribute it and/or modify it
 under the terms of the the Artistic License (2.0). You may obtain a
 copy of the full license at: L<http://www.perlfoundation.org/artistic_license_2_0>
+
 =cut
 
 #_}

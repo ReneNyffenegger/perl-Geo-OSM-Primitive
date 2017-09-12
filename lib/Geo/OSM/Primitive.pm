@@ -16,7 +16,7 @@ use utf8;
 use Carp;
 
 #_}
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 #_{ Synopsis
 
 =head1 SYNOPSIS
@@ -206,11 +206,13 @@ with SQLite.
 #_{ POD: Copyright and license
 
 =head1 COPYRIGHT AND LICENSE
+
 Copyright © 2017 René Nyffenegger, Switzerland. All rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the the Artistic License (2.0). You may obtain a
 copy of the full license at: L<http://www.perlfoundation.org/artistic_license_2_0>
+
 =cut
 
 #_}
